@@ -4,7 +4,7 @@
 # * Spaces only, no tabs
 # * Wrap words in quotes wherever commas are used
 
-org:        EPH Software
+org:        Tulip Lacquer
 product:    Cloud Sync
 permalink:  pretty
 exclude:    [".gitignore",
