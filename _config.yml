@@ -1,0 +1,13 @@
+# * _config.yml
+# * Stores static configuration and project info
+#
+# * Spaces only, no tabs
+# * Wrap words in quotes wherever commas are used
+
+org:        EPH Software
+product:    Cloud Sync
+permalink:  pretty
+exclude:    [".gitignore",
+            "Gemfile"]
+gems:
+  - jekyll-seo-tag
