@@ -1,31 +1,26 @@
 (function($) {
-    "use strict"; // Start of use strict
+  "use strict";
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  $('a.page-scroll').bind('click', function(event) { // page scrolling feature (requires jQuery Easing plugin)
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+      scrollTop: ($($anchor.attr('href')).offset().top - 50)
+    }, 1250, 'easeInOutExpo');
+    event.preventDefault();
+  });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 100
-    });
+  $('body').scrollspy({ // highlight the top nav as scrolling occurs
+    target: '.navbar-fixed-top',
+    offset: 100
+  });
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
+  $('.navbar-collapse ul li a').click(function() { // closes the responsive menu on click
+    $('.navbar-toggle:visible').click();
+  });
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 50
-        }
-    })
-
-})(jQuery); // End of use strict
+  $('#mainNav').affix({ // offset for main nav
+    offset: {
+      top: 50
+    }
+  })
+})(jQuery);
